@@ -10,9 +10,9 @@ namespace MiniBot
         static void Main(string[] args)
         {
             string url = "https://www.facebook.com/";
-            string email = "jacob.ssfd@outlook.com";
-            string pass = "Clave1234";
-            FirefoxDriverService service = FirefoxDriverService.CreateDefaultService("/Applications/Firefox.app/Contents/MacOS", "geckodriver");
+            string email = "tu@mail.com";
+            string pass = "tu_password";
+            FirefoxDriverService service = FirefoxDriverService.CreateDefaultService("Dirección del archivo", "geckodriver");
 
             FirefoxDriver driver = new FirefoxDriver(service);
             driver.Navigate().GoToUrl(url);
